@@ -1,0 +1,320 @@
+@font-face {
+    font-family: "TiemposText-Bold";
+    src: url("https://db.onlinewebfonts.com/t/5a0f655e9b491e4ed02d0ea75b213bca.eot");
+    src: url("https://db.onlinewebfonts.com/t/5a0f655e9b491e4ed02d0ea75b213bca.eot?#iefix") format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/5a0f655e9b491e4ed02d0ea75b213bca.woff2") format("woff2"),
+        url("https://db.onlinewebfonts.com/t/5a0f655e9b491e4ed02d0ea75b213bca.woff") format("woff"),
+        url("https://db.onlinewebfonts.com/t/5a0f655e9b491e4ed02d0ea75b213bca.ttf") format("truetype"),
+        url("https://db.onlinewebfonts.com/t/5a0f655e9b491e4ed02d0ea75b213bca.svg#TiemposText-Bold") format("svg");
+}
+
+@font-face {
+    font-family: "TiemposText-Regular";
+    src: url("https://db.onlinewebfonts.com/t/37b29158c68de167677fa4a3087d7188.eot");
+    src: url("https://db.onlinewebfonts.com/t/37b29158c68de167677fa4a3087d7188.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/37b29158c68de167677fa4a3087d7188.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/37b29158c68de167677fa4a3087d7188.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/37b29158c68de167677fa4a3087d7188.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/37b29158c68de167677fa4a3087d7188.svg#TiemposText-Regular")format("svg");
+}
+
+body {
+    background-color: #15181D;
+    color: #f2f2f2;
+    font-family: 'inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav {
+    background-color: #15181D;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 100px;
+}
+
+.separar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.procurar {
+    border-bottom: 3px solid rgb(227, 93, 93);
+    border-radius: 8px;
+}
+
+.title {
+    font-weight: 1000;
+}
+
+
+.foot {
+    background-color: #2c3440;
+    bottom: 0;
+    width: 100%;
+}
+
+.filme-card {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+
+.film-cartaz:hover {
+    border: 1px solid #f2f2f2;
+}
+
+.filme-cartaz {
+    width: 100%;
+    height: 380px;
+    border-radius: 8px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+}
+
+.filmes-cartaz {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+}
+
+.separar-text {
+    padding-left: 20px;
+    padding-top: 10px;
+    width: 90%;
+}
+
+.info {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.plot {
+    display: block;
+    max-width: 60ch;
+    line-height: 25px;
+    color: #9ab;
+}
+
+.filme-titulo {
+    font-size: 32px;
+    font-family: 'TiemposText-Bold';
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #f8f8f8;
+}
+
+.filme-ano {
+    font-size: 1.2rem;
+    color: #bcd;
+}
+
+.filme-realizador {
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+.filme-plot {
+    font-family: "TiemposText-Regular";
+    color: #9ab;
+}
+
+.highlight {
+    color: #bcd;
+}
+
+.white {
+    color: #ccc;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.resultados {
+    display: none
+}
+
+.icones {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    width: 90%;
+    margin-top: 10px;
+}
+
+i {
+    width: 10px;
+}
+
+.cor-icones {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.botoes {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 13px;
+}
+
+.botao {
+    border-radius: 8px;
+    padding: 0 16px 0 16px;
+    height: 40px;
+    background-color: #2c3440;
+    border: none;
+    color: #f2f2f2;
+}
+
+.botao:hover {
+    transform: scale(1.04);
+    /* Aumenta o tamanho do cartaz */
+    border: 2px solid #f0f0f0;
+    /* Adiciona uma borda ao redor do cartaz */
+    color: #15181D;
+    background-color: #f2f2f2;
+}
+
+/* Definir a animação de fade-in e slide-up */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplicar a animação aos elementos de filmes */
+.filme-card,
+.emAlta,
+.topFilmes {
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Caso queira um delay para cada filme */
+.filme-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.filme-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.filme-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.filme-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.filme-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.filme-card:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+/* Animação de fade-in (aparecer) */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Animação de fade-out (desaparecer) */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Aplicar fade-out antes de esconder */
+.filme-card.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+
+/* Aplicar fade-in quando os filmes aparecerem */
+.filme-card.fade-in {
+    animation: fadeIn 0.5s forwards;
+}
+
+.filme-card img {
+    transition: transform 0.3s ease, border 0.3s ease;
+    /* Para suavizar o efeito */
+    border: 2px solid transparent;
+    /* Borda inicial invisível */
+}
+
+.separar-img:hover img {
+    transform: scale(1.06);
+    /* Aumenta o tamanho do cartaz */
+    border: 2px solid #f0f0f0;
+    /* Adiciona uma borda ao redor do cartaz */
+    padding: 2px;
+}
+
+.cardActor {
+    border: 2px solid #f2f2f2;
+    border-radius: 5px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.nomeCrew {
+    text-align: center;
+    color: #ffe;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.btnCrew {
+    background: linear-gradient(to right, #ffe600, #ffc800);
+    padding: 8px 16px;
+    border-radius: 16px;
+    border: none;
+    font-family: 'Inter';
+    font-weight: bold;
+    margin: 10px auto;
+    display: block;
+}
+
+.imagemCrew {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 30%;
+    margin: 0 auto;
+    display: block;
+}
