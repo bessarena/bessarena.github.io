@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Já Vi!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=David+Libre:wght@400;500;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand logo" href="01-index.html">JÁVI!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="02-procurar.html">Procurar</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Subscrições
+                        </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item">
+                            <a class="dropdown-item" href="03-0-subscribe.html">Todas as Subscrições</a>
+                        </li>
+                        <li><a class="dropdown-item" href="03-1-subscribe.html">Por Nome</a></li>
+                        <li><a class="dropdown-item" href="03-2-subscribe.html">Próximos Lançamentos</a></li>
+                    </ul>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="04-listas.html">Listas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="05-noticias.html">Notícias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="06-atividade.html">Atividade</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <img src="listas.png" alt="" style="width: 100%;">
+
+    <div class="container mt-5">
+        <!-- Star Wars Carousel -->
+        <div class="row mt-5">
+            <h3>Listas Populares</h3>
+            <h6>Ver mais tarde</h3>
+            <div class="col-12 text-center">
+                <h6>The Complete Star Wars Series</h6>
+            </div>
+        </div>
+        <div id="carouselStarWars" class="carousel slide mt-3" data-bs-ride="carousel">
+            <div class="carousel-inner" id="carouselStarWarsItems"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselStarWars" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselStarWars" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    
+        <!-- Harry Potter Carousel -->
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <h6>The Complete Harry Potter Series</h6>
+            </div>
+        </div>
+        <div id="carouselHarryPotter" class="carousel slide mt-3" data-bs-ride="carousel">
+            <div class="carousel-inner" id="harryPotterItems"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHarryPotter" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselHarryPotter" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Marvel Carousel -->
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <h6>The Complete Marvel Cinematic Universe Series</h6>
+            </div>
+        </div>
+        <div id="carouselMarvel" class="carousel slide mt-3" data-bs-ride="carousel">
+            <div class="carousel-inner" id="carouselMarvelItems"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMarvel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselMarvel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+        
+    
+    <footer class="text-white text-center py-3 mt-5 foot">
+        <p>&copy; 2024 Já Vi! Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const apiKey = '90ff8e83';
+        
+        const starWarsMovies = [
+            'tt0076759', 'tt0080684', 'tt0086190', 
+            'tt0120915', 'tt0121765', 'tt0121766', 
+            'tt1185834', 'tt2488496', 'tt3748528',
+            'tt2527336', 'tt3778644', 'tt2527338'
+        ];
+        const harryPotterMovies = [
+            'tt0241527', 'tt0295297', 'tt0304141', 
+            'tt0330373', 'tt0373889', 'tt0417741', 
+            'tt0926084', 'tt1201607'
+        ];
+        const marvelUniverseMovies = [
+            'tt0371746', 'tt0800080', 'tt1228705', 
+            'tt0800369', 'tt0458339', 'tt0848228', 
+            'tt1300854', 'tt1981115', 'tt1843866',
+            'tt2015381', 'tt2395427', 'tt0478970',
+            'tt3498820', 'tt1211837', 'tt3896198',
+            'tt2250912', 'tt3501632', 'tt1825683',
+            'tt4154756', 'tt5095030', 'tt4154664',
+            'tt4154796', 'tt6320628', 'tt3480822',
+            'tt9376612', 'tt9032400', 'tt10872600',
+            'tt9419884', 'tt10648342', 'tt9114286',
+            'tt10954600', 'tt6791350', 'tt10676048',
+            'tt6263850'
+        ];
+
+    
+        async function fetchMovieData(imdbID) {
+            try {
+                const response = await fetch(`https://www.omdbapi.com/?i=${imdbID}&apikey=${apiKey}`);
+                return await response.json();
+            } catch (error) {
+                console.error('Erro ao buscar dados do filme:', error);
+                return null;
+            }
+        }
+    
+        async function createCarousel(movieIds, carouselContainerId) {
+            const carouselContainer = document.getElementById(carouselContainerId);
+            const chunkSize = 4; // Number of movies per slide
+            let moviesData = [];
+    
+            // Fetch movie details
+            for (let imdbID of movieIds) {
+                const movie = await fetchMovieData(imdbID);
+                if (movie && movie.Poster) {
+                    moviesData.push(movie);
+                }
+            }
+    
+            // Create slides
+            for (let i = 0; i < moviesData.length; i += chunkSize) {
+                let chunk = moviesData.slice(i, i + chunkSize);
+    
+                // Fill slides with movies from the start if the last slide is incomplete
+                if (chunk.length < chunkSize) {
+                    const missingItems = chunkSize - chunk.length;
+                    chunk = chunk.concat(moviesData.slice(0, missingItems));
+                }
+    
+                const isActive = i === 0 ? 'active' : ''; // First slide active
+                const slide = `
+                    <div class="carousel-item ${isActive}">
+                        <div class="d-flex justify-content-center">
+                            ${chunk.map(movie => `
+                                <div class="card mx-2">
+                                    <a href="filmes.html?imdbID=${movie.imdbID}">
+                                        <img src="${movie.Poster}" class="card-img-top" alt="${movie.Title}">
+                                    </a>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+                carouselContainer.innerHTML += slide;
+            }
+        }
+    
+        // Initialize carousels
+        createCarousel(starWarsMovies, 'carouselStarWarsItems');
+        createCarousel(harryPotterMovies, 'harryPotterItems');
+        createCarousel(marvelUniverseMovies, 'carouselMarvelItems');
+    </script>
+    
+
+</body>
+</html>
